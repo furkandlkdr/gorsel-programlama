@@ -22,6 +22,7 @@ namespace Odev1
             gamePage game = new gamePage();
             game.Show();
             this.Hide();
+            game.FormClosed += (s, args) => Application.Exit();
         }
     }
 }

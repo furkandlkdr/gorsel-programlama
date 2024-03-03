@@ -14,7 +14,8 @@ namespace Odev1
         {
             InitializeComponent();
             Random rnd = new Random();
-            searchingNumber = rnd.Next(0, 200);
+            searchingNumber = rnd.Next(numberMin, numberMax);
+            updateGap(-1, "");
         }
 
         private void guessBtn_Click(object sender, EventArgs e)
@@ -65,15 +66,20 @@ namespace Odev1
 
         private void updateGap(int choice, string number)
         {
-            if (choice == 1)
+            switch (choice)
             {
-                numberMin = int.Parse(number);
-                minLabel.Text = number;
-            }
-            else
-            {
-                numberMax = int.Parse(number);
-                maxLabel.Text = number;
+                case -1:
+                    minLabel.Text = numberMin.ToString();
+                    maxLabel.Text = numberMax.ToString();
+                    break;
+                case 1:
+                    numberMin = int.Parse(number);
+                    minLabel.Text = number;
+                    break;
+                default:
+                    numberMax = int.Parse(number);
+                    maxLabel.Text = number;
+                    break;
             }
         }
 
