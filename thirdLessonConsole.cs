@@ -39,6 +39,7 @@ namespace Ders3
                     Queue<string> queue = new Queue<string>();
                     queue.Enqueue("Deneme1");
                     queue.Enqueue("Deneme2");
+                    queue.Dequeue(); // pop ile aynı işlev
                     Console.WriteLine(queue.Peek()); // deneme1 yazdırır.
                 }
                 void LinkedList(){
