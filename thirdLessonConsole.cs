@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Linq.Expressions;
 
 namespace Ders3
 {
@@ -56,9 +55,6 @@ namespace Ders3
                     Dictionary<string,string> dic = new Dictionary<string,string>();
                     dic.Add("Banu Ulu", "Programlama");
                     dic.Add("Burak KARAHAN", "Programlama");
-                    foreach(KeyValuePair<string,string> pair in dic){
-                        Console.WriteLine(pair.Key + " " + pair.Value);
-                    }
                 }
                 void SortedDictionary(){
                     SortedDictionary<string, int> sortedDic = new SortedDictionary<string, int>() { { "Talha AKTAS", 101 }, { "Azra AKTAS", 22 } };
@@ -67,23 +63,6 @@ namespace Ders3
                     Index i1 = 2; //Bastan 2. indexe ulaşırız
                     Index i2 =^ 3; //Sondan 2. indexe ulaşırız (Dizide vs kullandığımzda
                 } // pdf 65 - 83 arası yok
-            }
-
-            void HataAyiklama(){
-                void exception(){
-                    try{
-                        byte deneme = Convert.ToByte(Console.ReadLine());
-                    } 
-                    //catch (Exception e){
-                    //    Console.WriteLine(e.Message);
-                    //} 255 üstü bir şey girildiğinde overflow hatası alacağız
-                    catch (DivideByZeroException) { }
-                    catch (OverflowException) { }
-                    catch (ArithmeticException) { }
-                    //ConditionalExpression
-                    // Form ve exception hakkında 15 sayfa daha eklenecek buraya
-                    //ShowDialog ile diğer formları açabiliriz, açtığımız şey kapanmadan diğer forma geçmez
-                }
             }
 
         }
