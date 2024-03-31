@@ -57,7 +57,7 @@
             button0.BackColor = Color.Cornsilk;
             button0.FlatStyle = FlatStyle.Flat;
             button0.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button0.Location = new Point(77, 35);
+            button0.Location = new Point(115, 146);
             button0.Name = "button0";
             button0.Size = new Size(32, 31);
             button0.TabIndex = 1;
@@ -70,7 +70,7 @@
             button1.BackColor = Color.Cornsilk;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button1.Location = new Point(115, 35);
+            button1.Location = new Point(77, 35);
             button1.Name = "button1";
             button1.Size = new Size(32, 31);
             button1.TabIndex = 2;
@@ -83,7 +83,7 @@
             button2.BackColor = Color.Cornsilk;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button2.Location = new Point(153, 35);
+            button2.Location = new Point(115, 35);
             button2.Name = "button2";
             button2.Size = new Size(32, 31);
             button2.TabIndex = 3;
@@ -96,7 +96,7 @@
             button3.BackColor = Color.Cornsilk;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button3.Location = new Point(77, 72);
+            button3.Location = new Point(153, 35);
             button3.Name = "button3";
             button3.Size = new Size(32, 31);
             button3.TabIndex = 4;
@@ -109,7 +109,7 @@
             button4.BackColor = Color.Cornsilk;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button4.Location = new Point(115, 72);
+            button4.Location = new Point(77, 72);
             button4.Name = "button4";
             button4.Size = new Size(32, 31);
             button4.TabIndex = 5;
@@ -122,7 +122,7 @@
             button5.BackColor = Color.Cornsilk;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button5.Location = new Point(153, 72);
+            button5.Location = new Point(115, 72);
             button5.Name = "button5";
             button5.Size = new Size(32, 31);
             button5.TabIndex = 6;
@@ -135,7 +135,7 @@
             button6.BackColor = Color.Cornsilk;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button6.Location = new Point(77, 109);
+            button6.Location = new Point(153, 72);
             button6.Name = "button6";
             button6.Size = new Size(32, 31);
             button6.TabIndex = 7;
@@ -148,7 +148,7 @@
             button7.BackColor = Color.Cornsilk;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button7.Location = new Point(115, 109);
+            button7.Location = new Point(77, 109);
             button7.Name = "button7";
             button7.Size = new Size(32, 31);
             button7.TabIndex = 8;
@@ -161,7 +161,7 @@
             button8.BackColor = Color.Cornsilk;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button8.Location = new Point(153, 109);
+            button8.Location = new Point(115, 109);
             button8.Name = "button8";
             button8.Size = new Size(32, 31);
             button8.TabIndex = 9;
@@ -174,7 +174,7 @@
             button9.BackColor = Color.Cornsilk;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button9.Location = new Point(115, 146);
+            button9.Location = new Point(153, 109);
             button9.Name = "button9";
             button9.Size = new Size(32, 31);
             button9.TabIndex = 10;
