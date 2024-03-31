@@ -4,7 +4,7 @@
 
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             // Farklı veri türlerinden elemanlar içeren bir dizi oluşturma
             Array myArray = Array.CreateInstance(typeof(object), new int[] { 5 });
@@ -19,40 +19,43 @@
             Console.WriteLine("Dizinin uzunluğu: {0}", myArray.Length);
 
             // Belirli bir elemanı bulma ve yazdırma
-            int arananIndex = 2;
-            object bulunanEleman = myArray.GetValue(arananIndex);
-            Console.WriteLine("Dizinin {0}. indisindeki eleman: {1}", arananIndex, bulunanEleman);
+            int index = Array.IndexOf(myArray, 3.14);
+            if (index != -1)
+            {
+                Console.WriteLine("Bulunan eleman: {0} (indis: {1})", myArray.GetValue(index), index);
+            }
+            else
+            {
+                Console.WriteLine("Eleman bulunamadı!");
+            }
 
             // Diziyi sıralama ve yazdırma
             Array.Sort(myArray);
             Console.WriteLine("Sıralanmış dizi:");
-            foreach (object eleman in myArray)
+            foreach (object element in myArray)
             {
-                Console.WriteLine(" - {0}", eleman);
+                Console.WriteLine(element);
             }
 
             // Belirli bir elemanın indeksini bulma
-            object arananDeger = 'A';
-            int bulunanIndeks = Array.IndexOf(myArray, arananDeger);
-            Console.WriteLine("{0} değerinin dizideki indeksi: {1}", arananDeger, bulunanIndeks);
+            index = Array.IndexOf(myArray, 'A');
+            Console.WriteLine("Elemanın indeksi: {0}", index);
 
             // Diziyi tersine çevirme ve yazdırma
             Array.Reverse(myArray);
             Console.WriteLine("Tersine çevrilmiş dizi:");
-            foreach (object eleman in myArray)
+            foreach (object element in myArray)
             {
-                Console.WriteLine(" - {0}", eleman);
+                Console.WriteLine(element);
             }
 
             // Diziyi belirli bir aralıkta kopyalama ve yazdırma
-            int baslangicIndeks = 1;
-            int kopyalanacakElemanSayisi = 3;
-            Array kopyalananDizi = Array.CreateInstance(typeof(object), new int[] { kopyalanacakElemanSayisi });
-            Array.Copy(myArray, baslangicIndeks, kopyalananDizi, 0, kopyalanacakElemanSayisi);
+            Array myArrayCopy = Array.CreateInstance(typeof(object), new int[] { 3 });
+            Array.Copy(myArray, 1, myArrayCopy, 0, 3);
             Console.WriteLine("Kopyalanan dizi:");
-            foreach (object eleman in kopyalananDizi)
+            foreach (object element in myArrayCopy)
             {
-                Console.WriteLine(" - {0}", eleman);
+                Console.WriteLine(element);
             }
         }
     }
